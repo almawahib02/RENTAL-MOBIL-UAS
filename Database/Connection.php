@@ -1,1 +1,0 @@
-<!-- buat koneksi ke database -->

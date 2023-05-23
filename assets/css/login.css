@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("../img/car_bg.jpg");
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 13%;
+    padding: 40px;
+    background-color: #d8d8d8;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #363636;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 94%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  .arrow{
+    position:relative;
+    width:30px;
+    height: 30px;
+    cursor:pointer;
+  /*   border:solid 1px white; */
+    transition:0.5s;
+    overflow:hidden;
+  }
+  
+  .arrow:hover{
+  /*  animation:borderAni 5s cubic-bezier(0, 0.6, 1, 0.4); */
+        border:solid 2px rgb(0, 0, 0); 
+      border-radius:50%;
+  }
+  .arrow:after{
+    position:absolute;
+    display:block;
+    content:"";
+    color:rgb(0, 0, 0);
+    width: 20px;
+    height: 15px;
+  /*   border:solid 1px;  */
+    top:-1px;
+    border-bottom:solid 2px;
+    transform:translatex(4px);
+  }
+  
+  .arrow:before{
+    position:absolute;
+    display:block;
+    content:"";
+    color:rgb(0, 0, 0);
+    width: 8px;
+    height: 8px;
+  /*   border:solid 1px;  */
+    border-top:solid 2px;
+    border-left:solid 2px;
+    top:50%;
+    left:2px;
+    transform-origin:0% 0%;
+    transform:rotatez(-45deg);
+  
+  }
+  .arrow:hover:before{
+   animation: aniArrow01 1s cubic-bezier(0, 0.6, 1, 0.4) infinite 0.5s;
+  }
+  
+  .arrow:hover:after{
+   animation: aniArrow02 1s cubic-bezier(0, 0.6, 1, 0.4) infinite 0.5s;
+  }
+  
+  
+  @keyframes aniArrow01 {
+    0% {
+      transform:rotatez(-45deg) translateY(30px) translateX(30px);
+    }
+    100% {
+      transform: rotatez(-45deg) translateY(-35px) translateX(-35px);
+    }
+  }
+  
+  
+  @keyframes aniArrow02 {
+    0% {
+      transform:translateX(45px);
+    }
+    100% {
+      transform:translateX(-44px);
+    }
+  }
+  
+  @keyframes borderAni{
+     0% {
+      border:solid 2px rgb(0, 0, 0);
+    }
+    100% {    
+      border:solid 2px rgb(0, 0, 0); 
+      border-radius:50%;
+    }
+  }
+
+  .regis {
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 34%;
+  }
