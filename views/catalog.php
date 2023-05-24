@@ -35,7 +35,7 @@
                 <li><a href="../index.php">Home</a></li>
                 <li><a href="catalog.php">Catalog</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="views/login_menu.php">Login</a></li>
+                <li><a href="login_menu.php">Login</a></li>
             </ul>
         </nav>
     </header>
