@@ -26,20 +26,14 @@
         <div class="card">
             <img src="assets/img/toyota-rush1.jpg" alt="Photo 1">
             <h3>MOBIL 1</h3>
-            <p>Rp. 250000/H</p>
-            <button class="rent-button">Rent</button>
         </div>
         <div class="card">
             <img src="assets/img/toyota-rush1.jpg" alt="Photo 2">
             <h3>MOBIL 2</h3>
-            <p>Rp. 250000/H</p>
-            <button class="rent-button">Rent</button>
         </div>
         <div class="card">
             <img src="assets/img/toyota-rush1.jpg" alt="Photo 3">
             <h3>MOBIL 3</h3>
-            <p>Rp. 250000/H</p>
-            <button class="rent-button">Rent</button>
         </div>
     </main>
 </body>
