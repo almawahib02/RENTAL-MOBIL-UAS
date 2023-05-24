@@ -32,9 +32,10 @@
         </div>
         <nav>
             <ul>
-                <li><a href="dashboard.php">Home</a></li>
+                <li><a href="../index.php">Home</a></li>
+                <li><a href="catalog.php">Catalog</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="../index.php">Logout</a></li>
+                <li><a href="views/login_menu.php">Login</a></li>
             </ul>
         </nav>
     </header>
@@ -51,14 +52,13 @@
 
         if (count($rows) > 0) {
             echo "<table>";
-            echo "<tr><th>Image</th><th>Name</th><th>Description</th><th>Action</th></tr>";
+            echo "<tr><th>Image</th><th>Name</th><th>Description</th></tr>";
             
             foreach ($rows as $row) {
                 echo "<tr>";
                 echo "<td><img src='../assets/img/" . $row['gambar'] . "' alt='" . $row['merk'] . "'></td>";
                 echo "<td>" . $row['merk'] . "</td>";
                 echo "<td>" . $row['harga'] . "</td>";
-                echo "<td><button class='rent-button'>Rent</button></td>";
                 echo "</tr>";
             }
             

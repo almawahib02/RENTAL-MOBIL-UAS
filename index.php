@@ -15,8 +15,8 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Catalog</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="views/catalog.php">Catalog</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="views/login_menu.php">Login</a></li>
             </ul>
